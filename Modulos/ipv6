@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # - Desabilita ipv6
+# telegram: @asas_dev
 
 echo -e "\033[1;37mDESABILITANDO O IPV6...\033[0m"
 sleep 3
