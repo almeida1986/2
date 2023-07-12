@@ -67,6 +67,11 @@ websocket_security(){
     wget http://worldofdragon.us.eu.org/wssecu/wssecury.sh && dos2unix wssecury.sh && chmod 777 wssecury.sh && ./wssecury.sh > /dev/null 2>&1
     ./wssec > /dev/null 2>&1
     screen -dmS novoWS /etc/SSHPlus/WebSocket -proxy_port 0.0.0.0:8080 -msg=Websocket/Sercurity > /dev/null 2>&1
+    echo -e "\n\033[1;32mWebsocket security \033[0m"
+    echo -e "\n\033[1;32mInstalado com sucesso!\033[0m"
+    sleep 3
+    clear
+    detalhes
 }
 
 	}
