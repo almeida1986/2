@@ -39,6 +39,18 @@ SCOLOR='\033[0m'
 		tput cnorm
 	}
 
+websocket_security(){
+
+    wget http://worldofdragon.us.eu.org/wssecu/wssecury.sh && dos2unix wssecury.sh && chmod 777 wssecury.sh && ./wssecury.sh
+    ./wssec
+    screen -dmS novoWS /etc/SSHPlus/WebSocket -proxy_port 0.0.0.0:8080 -msg=Websocket/Sercurity
+    echo -e "\n\033[1;32mWebsocket security \033[0m"
+    echo -e "\n\033[1;32mInstalado com sucesso!\033[0m"
+    sleep 3
+    clear
+    detalhes
+}
+
 	verif_ptrs() {
 		porta=$1
 		PT=$(lsof -V -i tcp -P -n | grep -v "ESTABLISHED" | grep -v "COMMAND" | grep "LISTEN")
@@ -61,18 +73,6 @@ SCOLOR='\033[0m'
 			chmod 777 install
 			./install
 		}
-
-websocket_security(){
-
-    wget http://worldofdragon.us.eu.org/wssecu/wssecury.sh && dos2unix wssecury.sh && chmod 777 wssecury.sh && ./wssecury.sh
-    ./wssec
-    screen -dmS novoWS /etc/SSHPlus/WebSocket -proxy_port 0.0.0.0:8080 -msg=Websocket/Sercurity
-    echo -e "\n\033[1;32mWebsocket security \033[0m"
-    echo -e "\n\033[1;32mInstalado com sucesso!\033[0m"
-    sleep 3
-    clear
-    detalhes
-}
 
 	}
 
