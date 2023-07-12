@@ -48,6 +48,7 @@ websocket_security(){
     echo -e "\n\033[1;32mInstalado com sucesso!\033[0m"
     sleep 2
     detalhes
+
 }
 
 	verif_ptrs() {
