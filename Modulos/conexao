@@ -50,6 +50,7 @@ websocket_security(){
     echo -e "\n\033[1;32mWebsocket security \033[0m"
     echo -e "\n\033[1;32mInstalado com sucesso!\033[0m"
     sleep 2
+    clear
     detalhes
     echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
 }
