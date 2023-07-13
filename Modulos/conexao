@@ -2126,9 +2126,9 @@ exit 0' >$RCLOCAL
 				xv2ray="\033[1;31m✕ "
 			}
                         [[ "$(netstat -tunlp | grep 'WebSocket' | wc -l)" != '0' ]] && {
-				xwebss="\033[1;32m✓ "
+				xwebss="\033[1;32mPorta 8080 ✓ "
 			} || {
-				xwebss="\033[1;31m✕ "
+				xwebss="\033[1;31mPorta 8080 ✕ "
 			}
                         
 			echo -e "\033[0;34m╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m"
